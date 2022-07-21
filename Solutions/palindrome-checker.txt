@@ -1,0 +1,19 @@
+function palindrome(str) {
+  console.log(str);
+
+  let splitedStr = str.replace(/[^a-z0-9]/gi, '').split(" ").join("").toLowerCase();
+  console.log(splitedStr);
+  let newStr = splitedStr.split("").reverse().join("");
+  console.log(newStr);
+  
+  if(splitedStr === newStr) {
+    console.log(true);
+    return true;
+  }
+  else {
+    console.log(false);
+    return false;
+  }
+}
+
+palindrome("0_0 (: /-\ :) 0-0");

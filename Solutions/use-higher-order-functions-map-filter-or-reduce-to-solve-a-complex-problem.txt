@@ -1,0 +1,19 @@
+const squareList = arr => {
+  // Only change code below this line
+
+  // ****By combination of filter and map****
+  // return arr.filter((number) => Number.isInteger(number))
+  // .filter(number => number > 0).map(number => number * number);
+  
+  // ****By only reduce method****
+  return arr.reduce((newArr, number) => {
+    if(Number.isInteger(number) && number > 0) {
+      newArr.push(number * number);
+    }
+    return newArr;
+  }, [])
+  // Only change code above this line
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+// console.log(squaredIntegers);

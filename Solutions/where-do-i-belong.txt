@@ -1,0 +1,27 @@
+function sort(arr) {
+  return arr.sort(function(a, b) {
+    return (a === b)? 0: (a > b)? 1: -1;
+  })
+}
+
+function getIndexToIns(arr, num) {
+  sort(arr);
+
+  if(arr.length === 0) {
+    return 0;
+  }
+  if(arr.includes(num)) {
+    return arr.indexOf(num);
+  }
+  else if(num > arr[arr.length-1]){
+    return arr.length;
+  }
+
+  for(let i = 0; i < arr.length;i++) {
+    if(num > arr[i] && num <= arr[i+1]) {
+      return i+1;
+    }
+  }
+}
+
+getIndexToIns([3, 10, 5], 5);

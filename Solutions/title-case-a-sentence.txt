@@ -1,0 +1,22 @@
+function titleCase(str) {
+  
+  // let splitedStr = str.split(" ");
+  // let result = "";
+  // console.log(splitedStr);
+  // for(let i = 0; i < splitedStr.length;i++) {
+  //   result += splitedStr[i][0].toUpperCase() + splitedStr[i].slice(1).toLowerCase() + " ";
+  // }
+  // return result;
+
+  let splitedStr = str.split(" ");
+  // console.log(splitedStr);
+  const updatedStr = [];
+  for(let i = 0;i < splitedStr.length;i++) {
+    updatedStr.push(splitedStr[i][0].toUpperCase() + splitedStr[i].slice(1).toLowerCase())
+  }
+  // console.log(updatedStr)
+  // console.log(updatedStr.join(" "));
+  return updatedStr.join(" ");
+}
+
+titleCase("Here Is My Handle Here Is My Spout");
