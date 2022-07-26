@@ -1,6 +1,8 @@
 function isAnagram(str1, str2) {
    
-    if(str1.length !== str2.length)    
+    if(!str1 && !str2)
+        return true
+    if(!str2 || str1.length != str2.length)
         return false;
 
     let counter = {};
