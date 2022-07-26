@@ -21,12 +21,12 @@ function factorialLarge(n) {
 
         while(carry != 0) {
             ans.push(carry % 10);
-            console.log(ans);
+            // console.log(ans);
             carry = Math.floor(carry / 10)
         }
     }
 
-    console.log(ans);
+    console.log(ans.reverse());
 }
 
 let n = 5;
