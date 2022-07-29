@@ -1,6 +1,7 @@
 
 // constraints = 1 <= n <= 1000 ie. 10^3
 // which gives you the large factorial number 
+// we can't store it in any primitive datatype
 // so, we have to store it on array of size 500
 
 function factorialLarge(n) {
