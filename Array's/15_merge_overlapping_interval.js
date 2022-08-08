@@ -47,6 +47,7 @@ function mergetIntervals(arr, n) {
 
 // let arr = [[1, 3], [2, 6], [15, 18], [8, 10]];
 // let arr = [[1, 2], [2, 4], [6, 10], [9, 10], [10, 200]];
-let arr = [[1, 2]]
+// let arr = [[1, 2]]
+let arr = [[0, 20], [5, 10], [10, 15]];
 
 mergetIntervals(arr, arr.length);

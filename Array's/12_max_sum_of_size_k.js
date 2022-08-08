@@ -31,6 +31,7 @@ function consecutiveSum(arr, k) {
     return max;
 }
 
+// Sliding window 
 // Time complexity = O(n*k)
 // function consecutiveSum(arr, k) {
    

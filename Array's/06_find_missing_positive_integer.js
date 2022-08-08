@@ -37,6 +37,8 @@ function findMissing(arr) {
 // let arr = [-4, -5, 2, 4, -7, 1, 3];
 // let arr = [-2, -1, 1, 2, 3, 4];
 
-let arr = [0, 1, 6, 7, 8];
-console.log(arr.sort((a, b) => a - b));
+let arr = [0,2,2,1,1];
+
+// let arr = [0, 1, 6, 7, 8];
+// console.log(arr.sort((a, b) => a - b));
 console.log(findMissing(arr));
